@@ -1,0 +1,5 @@
+Enter the following command in your terminal to output your prediction results in a txt file:
+py .\ test_model.py --model_path [path of the model] --test_data_path [path of your data for prediction] --result_path [path of the output]
+
+Example: 
+py .\ test_model.py --model_path model.pt --test_data_path extra_set_for_simulating_prediction\nike --result_path results.txt
