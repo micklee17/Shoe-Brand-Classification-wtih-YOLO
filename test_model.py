@@ -19,7 +19,7 @@ for filename in os.listdir(args.test_data_path):
     source = os.path.join(args.test_data_path, filename)
     results = model(source)
     for result in results:
-        predicted_results.append(f"{filename}\t\t\t{result.names[result.probs.top1]}\t\t\t{round(result.probs.top1conf.item(), 2)}")
+        predicted_results.append(f"{filename}, {result.names[result.probs.top1]}, {round(result.probs.top1conf.item(), 2)}")
 
 # Save results to txt
 np.savetxt(args.result_path, predicted_results, fmt='%s')
