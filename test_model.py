@@ -23,3 +23,5 @@ for filename in os.listdir(args.test_data_path):
 
 # Save results to txt
 np.savetxt(args.result_path, predicted_results, fmt='%s')
+
+print('\nProcess finished')
