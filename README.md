@@ -1,2 +1,2 @@
-# Shoe-Brand-Classification-wtih-YOLO
+# Shoe-Brand-Classification-wtih-YOLOv8
  
